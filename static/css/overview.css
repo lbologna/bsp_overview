@@ -179,7 +179,7 @@ height: 15px;
 /* Bigger than 750 */
 @media (min-width: 750px) {
   .hero {
-    height: 190px;
+    /*height: 190px;*/
   }
   .hero-heading {
     font-size: 2.6rem;
