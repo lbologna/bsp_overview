@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <!-- Basic Page Needs
+    –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+    <meta charset="utf-8">
+    <title>Brain Simulation Platform</title>
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <!-- Mobile Specific Metas
+    –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- FONT
+    –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+    <link href='https://fonts.googleapis.com/css?family=Roboto:400,300,500' rel='stylesheet' type='text/css'>
+
+    <!-- CSS
+    –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+    <link rel="stylesheet" href="./static/css/normalize.css">
+    <link rel="stylesheet" href="./static/css/skeleton.css">
+    <link rel="stylesheet" href="./static/css/platform.css">
+
+    <!-- Scripts
+    –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+    
+    <script>
+        var redirect = function(tgt)
+        {
+            var msg = 
+            {
+                eventName: 'location',
+                data:
+                {
+                    url: tgt
+                }
+            };
+            window.parent.postMessage(msg, '*');
+        }
+        //$('a#foundation').click(function(){ redirect('#/collab/161/nav/5348'); return false; });
+    </script>
+</head>
+<body>
+
+<!-- Primary Page Layout
+–––––––––––––––––––––––––––––––––––––––––––––––––– -->
+
+<div class="section hero">
+    <div class="container">
+        <div class="row">
+            <div class="one-half column">
+                <h3 class="section-heading heading-hero"><u>The Platform</u></h3>
+            </div>
+            <div class="one-half column heroes">
+                <img class="image_hero" src="./static/images/l5_ttpc2_76671_web_inv.png">
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="section dark dark3">
+    <div class="container">
+        <h3 class="section-heading">Open source tools</h3>
+        <p class="section-description">Key software developed and integral to the Platform can be found in this section. Many of the applications, such as the simulators NEST, STEPS, NEURON, or tools for analysing morphologies and optimising parameters, can be directly downloaded as open source and installed, even independently, of the Platform. Some applications may be restricted to remote use in the Platform Online.
+        </p>
+        <a href="https://collab.humanbrainproject.eu/#/collab/1655/nav/20754" id="foundation" class="button button-primary">Links to Open Source Tools</a>
+    </div>
+</div>
+
+<div class="section">
+    <div class="container">
+        <h3 class="section-heading">Platform online</h3>
+        <p class="section-description">
+        Foundation software and advanced pipelines for reconstruction and simulation, such as the single cell model builder workflow and microcircuit builder workflow, are integrated into the Platform as remotely accessible services. These services were co-designed with Subproject 6 science drivers during the Ramp-Up Phase. The services are of varying maturity and will improve over time. Access is typically restricted and requires a high-performance computing account.
+        </p>
+        <a href="https://collab.humanbrainproject.eu/#/collab/1655/nav/20838" class="button button-primary">Browse the use case collabs</a>
+    </div>
+</div>
+
+<div class="section dark dark2">
+    <div class="container">
+        <div class="row">    
+            <h3 class="section-heading">Model Collabs</h3>
+        </div>
+        <div class="row">
+            <div class="one-half column category">
+                <p class="section-description">These Collabs showcase the scientific work performed during the Ramp-Up Phase, i.e. scaffold models of different subcellular or cellular structures, or entire brain regions. The Collabs also illustrate how the Platform is used for collaborative model building and they provide a template for new modelling initiatives within the Human Brain Project (HBP) platform ecosystem.
+                </p>
+                <p class="section-description">
+                <a class="button button-primary" href="https://collab.humanbrainproject.eu/#/collab/1655/nav/15191">Open the model collabs</a>
+                <p/>
+            </div>
+            <div class="one-half column category">
+                <img class="u-max-full-width" src="./static/images/small_img1.jpeg">
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="section">
+    <div class="container">
+        <div class="row">    
+            <h3 class="section-heading">Your own Collab/community</h3>
+        </div>
+        <div class="row">
+            <div class="one-half column category">
+                <p class="section-description">You can create your own Collab for working collaboratively on a project and include services provided by the Brain Simulation Platform or other HBP platforms. You can invite members to join your Collab. Access to privileged services may be subject to conditions and further approval.
+                </p>
+                <p class="section-description">
+                <a class="button button-primary" href="https://collab.humanbrainproject.eu/#/collab/19/nav/179" target="_blank">Create your own collab</a>
+                </p>
+            </div>
+            <div class="one-half column category">
+                <div class="row">
+                    <img class="u-max-full-width" src="./static/images/small_img2.jpeg">
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+<!-- End Document
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+</body>
+</html>

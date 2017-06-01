@@ -1,0 +1,225 @@
+/* Shared
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+.button {
+  border-radius: 0;
+}
+
+.button.button-primary, button.button-primary, input[type="submit"].button-primary, input[type="reset"].button-primary, input[type="button"].button-primary {
+    color: #FFF;
+  background-color: #da7639 ; /* orange later d85634 */
+  border-color: #da7639 ;
+}
+
+.button.button-primary:hover, button.button-primary:hover, input[type="submit"].button-primary:hover, input[type="reset"].button-primary:hover, input[type="button"].button-primary:hover {
+    color: #FFF;
+  background-color: #c9530b ;
+  border-color: #c9530b ;
+}
+
+/* Sections
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+.start {
+	position: relative;
+	background: #c9530b;
+    margin-right:16px;
+}
+
+.start:after {
+	top: 100%;
+	left: 50%;
+	border: solid transparent;
+	content: " ";
+	height: 0;
+	width: 0;
+	position: absolute;
+	pointer-events: none;
+	border-color: rgba(0, 0, 0, 0);
+	border-top-color: #da7639;
+	border-width: 12px;
+	margin-left: -12px;
+}
+
+.start:hover:after {
+	border-top-color: #c9530b;
+}
+
+.section {
+  padding: 8rem 0 7rem;
+  text-align: left;
+}
+.section-heading,
+.section-description {
+  margin-bottom: 1rem;
+}
+
+.video-wrapper {
+	position: relative;
+	padding-bottom: 56.25%; /* 16:9 */
+	padding-top: 25px;
+	height: 0;
+}
+.video-wrapper iframe {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+}
+
+/* Hero
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+.hero-bar {
+    width:auto;
+    color: #fff;
+background-color: #fff;
+height: 15px;
+    border: 0 none;
+}
+
+.hero {
+  background-image: url('../images/background_n02.jpeg');
+  background-size: cover;
+  color: #fff;
+  padding-bottom: 5rem;
+}
+.heroes {
+  position: relative;
+}
+.heroes {
+  position: relative;
+  /*max-width: 80%;*/
+  margin: 3rem auto -12rem;
+}
+
+.heading-hero {
+    /*border: 1px solid white ;*/
+    margin-top: 4rem;
+  margin-bottom: 2rem;
+}
+
+.image_welcome {
+    max-height: 400px;
+}
+
+.image_hero + .image_hero {
+  display: none;
+}
+
+/* Objective
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+.objective-id {
+  margin-bottom: .5rem;
+  color: #11DFC7;
+    text-align: center;
+}
+.objective-heading {
+  margin-bottom: .3rem;
+}
+.objective-description {
+  /*opacity: .8;*/
+  font-weight: 300;
+}
+
+/* Expectations
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+.objectives {
+  background-color: #ecf2f4;
+  background-size: cover;
+  padding-bottom: 5rem;
+}
+
+/* Audience
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+.audience {
+  background-image: url('../images/background_n01.jpeg');
+  background-size: cover;
+  color: #fff;
+  padding-bottom: 5rem;
+}
+
+/* Help
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+.get-help {
+  border-bottom: 1px solid #ddd;
+}
+
+
+@media (min-width: 10px) { 
+    .image_hero {
+        display:none;
+    }
+}
+
+/* Bigger than 550 */
+@media (min-width: 550px) {
+  .section {
+    padding: 12rem 0 11rem;
+  }
+  .hero {
+    padding-bottom: 12rem;
+    text-align: left;
+    height: 165px;
+  }
+  .image_hero {
+      /*
+    display: block;
+    position: absolute;
+    top: -14rem;
+    left: 0px;
+    max-height: 500px;
+    right: 3rem;*/
+    z-index: -3;
+  } 
+  .hero-heading {
+    font-size: 2.4rem;
+  }
+    
+}
+
+/* Bigger than 750 */
+@media (min-width: 750px) {
+  .hero {
+    height: 190px;
+  }
+  .hero-heading {
+    font-size: 2.6rem;
+  }
+  .section {
+    padding: 14rem 0 15rem;
+  }
+  .hero {
+    padding: 16rem 0 14rem;
+  }
+  .section-description {
+    margin-left: 0;
+    /*margin-right: auto;*/
+  }
+  .image_hero {  
+    display: block;
+    position: absolute;
+    top: -14rem;
+    left: -50px;
+    max-height: 2100px;
+    /*max-height: 510px;
+    right: 5rem;*/
+  }
+  .categories {
+    padding: 15rem 0 8rem;
+  }
+}
+
+/* Bigger than 1000 */
+@media (min-width: 1000px) {
+  
+  .hero {
+    padding: 22rem 0;
+  }
+  .hero-heading {
+    font-size: 3.0rem;
+  }
+  .image_hero {
+    top: -16rem;
+    left: -50px;
+    /*max-height: 615px;*/
+  }
+}
