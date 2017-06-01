@@ -41,10 +41,7 @@
             window.parent.postMessage(msg, '*');
         }
         //$('a#foundation').click(function(){ redirect('#/collab/161/nav/5348'); return false; });
-        
-        $(document).ready(function(){
-            $('.external').attr('target', '_parent');
-        });
+
     </script>
 </head>
 <body>
@@ -70,7 +67,7 @@
         <h3 class="section-heading">Open source tools</h3>
         <p class="section-description">Key software developed and integral to the Platform can be found in this section. Many of the applications, such as the simulators NEST, STEPS, NEURON, or tools for analysing morphologies and optimising parameters, can be directly downloaded as open source and installed, even independently, of the Platform. Some applications may be restricted to remote use in the Platform Online.
         </p>
-        <a onclick="redirect('#/collab/1655/nav/20754'); id="foundation" class="button button-primary">Links to Open Source Tools</a>
+        <a onclick="redirect('#/collab/1655/nav/20754');" id="foundation" class="button button-primary">Links to Open Source Tools</a>
     </div>
 </div>
 
@@ -80,7 +77,7 @@
         <p class="section-description">
         Foundation software and advanced pipelines for reconstruction and simulation, such as the single cell model builder workflow and microcircuit builder workflow, are integrated into the Platform as remotely accessible services. These services were co-designed with Subproject 6 science drivers during the Ramp-Up Phase. The services are of varying maturity and will improve over time. Access is typically restricted and requires a high-performance computing account.
         </p>
-        <a href="https://collab.humanbrainproject.eu/#/collab/1655/nav/20838" class="button button-primary">Browse the use case collabs</a>
+        <a onclick="redirect('#/collab/19/nav/20838');" class="button button-primary">Browse the use case collabs</a>
     </div>
 </div>
 
@@ -94,7 +91,7 @@
                 <p class="section-description">These Collabs showcase the scientific work performed during the Ramp-Up Phase, i.e. scaffold models of different subcellular or cellular structures, or entire brain regions. The Collabs also illustrate how the Platform is used for collaborative model building and they provide a template for new modelling initiatives within the Human Brain Project (HBP) platform ecosystem.
                 </p>
                 <p class="section-description">
-                <a class="button button-primary" href="https://collab.humanbrainproject.eu/#/collab/1655/nav/15191">Open the model collabs</a>
+                <a class="button button-primary" onclick="redirect('#/collab/1655/nav/15191');">Open the model collabs</a>
                 <p/>
             </div>
             <div class="one-half column category">
@@ -114,7 +111,7 @@
                 <p class="section-description">You can create your own Collab for working collaboratively on a project and include services provided by the Brain Simulation Platform or other HBP platforms. You can invite members to join your Collab. Access to privileged services may be subject to conditions and further approval.
                 </p>
                 <p class="section-description">
-                <a class="button button-primary" href="https://collab.humanbrainproject.eu/#/collab/19/nav/179" target="_blank">Create your own collab</a>
+                <a class="button button-primary" onclick="redirect('#/collab/19/nav/179');" target="_blank">Create your own collab</a>
                 </p>
             </div>
             <div class="one-half column category">
