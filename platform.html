@@ -25,7 +25,7 @@
 
     <!-- Scripts
     –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-    <script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+    <script src="./static/js/jquery-3.2.1.min.js"></script>
     
     <script>
         var redirect = function(tgt)
@@ -43,8 +43,8 @@
         //$('a#foundation').click(function(){ redirect('#/collab/161/nav/5348'); return false; });
         
         $(document).ready(function(){
-  $('.external').attr('target', '_parent');
-});
+            $('.external').attr('target', '_parent');
+        });
     </script>
 </head>
 <body>
@@ -70,7 +70,7 @@
         <h3 class="section-heading">Open source tools</h3>
         <p class="section-description">Key software developed and integral to the Platform can be found in this section. Many of the applications, such as the simulators NEST, STEPS, NEURON, or tools for analysing morphologies and optimising parameters, can be directly downloaded as open source and installed, even independently, of the Platform. Some applications may be restricted to remote use in the Platform Online.
         </p>
-        <a href="https://collab.humanbrainproject.eu/#/collab/1655/nav/20754" id="foundation" class="button button-primary">Links to Open Source Tools</a>
+        <a onclick="redirect('#/collab/1655/nav/20754'); id="foundation" class="button button-primary">Links to Open Source Tools</a>
     </div>
 </div>
 
