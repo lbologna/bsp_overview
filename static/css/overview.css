@@ -76,11 +76,19 @@ height: 15px;
     border: 0 none;
 }
 
+.first {
+  background-image: url('../images/background_n02.jpeg');
+    background-size: cover;
+  color: #fff;
+  padding-bottom: 5rem;
+}
+
 .hero {
   background-image: url('../images/background_n02.jpeg');
   background-size: cover;
   color: #fff;
   padding-bottom: 5rem;
+
 }
 .heroes {
   position: relative;
