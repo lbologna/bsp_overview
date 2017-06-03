@@ -1,190 +1,198 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
+    <head>
 
-    <!-- Basic Page Needs
-    –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-    <meta charset="utf-8">
-    <title>Brain Simulation Platform</title>
-    <meta name="description" content="">
-    <meta name="author" content="">
+        <!-- Basic Page Needs
+            –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+            <meta charset="utf-8">
+            <title>Brain Simulation Platform</title>
+            <meta name="description" content="">
+            <meta name="author" content="">
 
-    <!-- Mobile Specific Metas
-    –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+            <!-- Mobile Specific Metas
+                –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+                <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <!-- FONT
-    –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-    <link href='https://fonts.googleapis.com/css?family=Roboto:400,300,500' rel='stylesheet' type='text/css'>
+                <!-- FONT
+                    –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+                    <link href='https://fonts.googleapis.com/css?family=Roboto:400,300,500' rel='stylesheet' type='text/css'>
 
-    <!-- CSS
-    –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-    <link rel="stylesheet" href="./static/css/normalize.css">
-    <link rel="stylesheet" href="./static/css/skeleton.css">
-    <link rel="stylesheet" href="./static/css/platform.css">
+                    <!-- CSS
+                        –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+                        <link rel="stylesheet" href="./static/css/normalize.css">
+                        <link rel="stylesheet" href="./static/css/skeleton.css">
+                        <link rel="stylesheet" href="./static/css/platform.css">
 
-    <!-- Scripts
-    –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-    <script src="./static/js/jquery-3.2.1.min.js"></script>
-    
-    <script>
-        var redirect = function(tgt)
+                        <!-- Scripts
+                            –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+                            <script src="./static/js/jquery-3.2.1.min.js"></script>
+
+                            <script>
+var redirect = function(tgt)
+{
+    var msg = 
+    {
+        eventName: 'location',
+        data:
         {
-            var msg = 
-            {
-                eventName: 'location',
-                data:
-                {
-                    url: tgt
-                }
-            };
-            window.parent.postMessage(msg, '*');
+            url: tgt
         }
-        //$('a#foundation').click(function(){ redirect('#/collab/161/nav/5348'); return false; });
+    };
+    window.parent.postMessage(msg, '*');
+}
+//$('a#foundation').click(function(){ redirect('#/collab/161/nav/5348'); return false; });
 
-    </script>
-</head>
-<body>
+                            </script>
+    </head>
+    <body>
 
-<!-- Primary Page Layout
-–––––––––––––––––––––––––––––––––––––––––––––––––– -->
-<!--            -->
-<div class="section hero">
-    <div class="container">
-        <div class="row">
-            <div class="one-half column">
-                <h3 class="section-heading heading-hero"><u>The Platform</u></h3>
-        <br>
-                The Brain Simulation Platform is divided into three main sections: <strong>Online Use Cases</strong>, <strong>Model Collabs</strong> and <strong>Open Source Tools</strong>. 
-                Please refer to the following sections for a brief introduction and to learn about other tools that help the user in their experience with the Platform.
+        <!-- Primary Page Layout
+            –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+            <!--            -->
+            <div class="section hero">
+                <div class="container">
+                    <div class="row">
+                        <div class="one-half column">
+                            <h3 class="section-heading heading-hero"><u>The Platform</u></h3>
+                            <br>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="one-half column">
+                            The Brain Simulation Platform is part of the Human Brain Project (HBP) platform ecosystem. It aims at providing scientists with powerful tools to reconstruct and simulate scaffold models of brain and brain tissue in a data-driven fashion. Its development is embedded in Subproject 6 of the HBP, where a tight co-design loop between science and engineering ensures the required substantial technical and scientific innovations.
+                        </div>
+                        <div class="one-half column">
+                            The Brain Simulation Platform is divided into three main sections: <strong>Online Use Cases</strong>, <strong>Model Collabs</strong> and <strong>Open Source Tools</strong>. 
+                            Please refer to the following sections for a brief introduction and to learn about other tools that help the user in their experience with the Platform.
 
-            </div>
-            <div class="one-half column heroes">
-                <img class="image_hero" src="./static/images/l5_ttpc2_76671_web_inv.png">
-            </div>
-        </div>
-    </div>
-</div>
-
-<!--            -->
-<div class="section  dark dark3">
-    <div class="container">
-        <h3 class="section-heading">Online Use Cases</h3>
-        <p class="section-description">
-        The Online Use Cases enable you to work through a number of pipelines; these are categorised by level of expertise and by their service maturity level. This section also highlights the use cases under development.
-
-        </p>
-        <a onclick="redirect('#/collab/1655/nav/20838');" class="button button-primary">Explore the simplest Use Case</a>
-    </div>
-</div>
-<!--            -->
-
-
-<!--            -->
-<div class="section">
-    <div class="container">
-        <div class="row">    
-            <h3 class="section-heading">Model Collabs</h3>
-        </div>
-        <div class="row">
-            <div class="one-half column category">
-                <p class="section-description">The Model Collabs section has a number of Collabs illustrating the scaffold models of rodent brain regions; these include:
-                <ul>
-<li>basal ganglia</li>
-<li>cerebellum</li>
-<li>hippocampus</li>
-<li>somatosensory cortex</li>
-</ul>
-
-There are also Collabs on subcellular modelling, human neuron models and a point-neuron cortical microcircuit. You can also find a useful description of ‘what is a scaffold model’ and how we will transition from scaffold models to more community-driven models.
-                </p>
-                <p class="section-description">
-                <a class="button button-primary" onclick="redirect('#/collab/1655/nav/15191');">Open the model collabs</a>
-                <p/>
-            </div>
-            <!--
-            <div class="one-half column category">
-                <img class="u-max-full-width" src="./static/images/small_img1.jpeg">
-            </div>
-            -->
-        </div>
-    </div>
-</div>
-<!--            -->
-
-<!--            -->
-<div class="section dark dark 3">
-    <div class="container">
-        <h3 class="section-heading">Open source tools</h3>
-<p class="section-description">
-       
-        Key software developed and integral to the Platform can be found in this section. Many of the applications, such as the simulators NEST, STEPS, NEURON, or tools for analysing morphologies and optimising parameters, can be accessed directly or through the Software Catalog.
-        </p>
-        <a onclick="redirect('#/collab/1655/nav/20754');" id="foundation" class="button button-primary">Link to the BluePyOpt tool</a>
-    </div>
-</div>
-<!--            -->
-
-<!--            -->
-<div class="section">
-    <div class="container">
-        <h3 class="section-heading">Brain Simulation Platform Guidebook</h3>
-        <p class="section-description">
-       The Guidebook is an important reference tool providing more details on the Platform and how to run the use cases.
-        </p>
-        <a onclick="redirect('#/collab/1655/nav/18580');" class="button button-primary">Brain Simulation Platform Guidebook</a>
-    </div>
-</div>
-<!--            -->
-
-<!--            -->
-<div class="section  dark dark3">
-    <div class="container">
-        <h3 class="section-heading">Getting Technical Support</h3>
-        <p class="section-description">
-       Hopefully the Guidebook will answer most of your questions. However, if you need any technical support, please create a ticket in the Issue Tracker.
-        </p>
-        <a onclick="redirect('#/collab/1655/nav/27138');" class="button button-primary">Issue Tracker</a>
-    </div>
-</div>
-<!--            -->
-
-<!--            -->
-<div class="section">
-    <div class="container">
-        <h3 class="section-heading">Providing Feedback</h3>
-        <p class="section-description">
-        We are always happy to hear from users and to get feedback to improve the Platform. Please drop us an email to: <a href="mailto:bsp-support@humanbrainproject.eu">bsp-community@humanbrainproject.eu</a>  
-        </p>
-    </div>
-</div>
-<!--            -->
-
-<!--            -->
-<div class="section  dark dark3">
-    <div class="container">
-        <div class="row">    
-            <h3 class="section-heading">Your own Collab/community</h3>
-        </div>
-        <div class="row">
-            <div class="one-half column category">
-                <p class="section-description">In addition to the tools and services provided by the Brain Simulation Platform, you can create your own Collab for working collaboratively on a project and include services provided by the Brain Simulation or other HBP Platforms. You can invite members to join your Collab. Access to privileged services may be subject to conditions and further approval.
-                </p>
-                <p class="section-description">
-                <a class="button button-primary" onclick="redirect('#/collab/19/nav/179');" target="_blank">Create your own collab</a>
-                </p>
-            </div>
-            <div class="one-half column category">
-                <div class="row">
-                    <img class="u-max-full-width" src="./static/images/small_img2.jpeg">
+                        </div>
+                        <div class="one-half column heroes">
+                            <img class="image_hero" src="./static/images/l5_ttpc2_76671_web_inv.png">
+                        </div>
+                    </div>
                 </div>
             </div>
-        </div>
-    </div>
-</div>
-<!--            -->
 
-<!-- End Document
-  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-</body>
+            <!--            -->
+            <div class="section  dark dark3">
+                <div class="container">
+                    <h3 class="section-heading">Online Use Cases</h3>
+                    <p class="section-description">
+                    The Online Use Cases enable you to work through a number of pipelines; these are categorised by level of expertise and by their service maturity level. This section also highlights the use cases under development.
+
+                    </p>
+                    <a onclick="redirect('#/collab/1655/nav/20838');" class="button button-primary">Explore the simplest Use Case</a>
+                </div>
+            </div>
+            <!--            -->
+
+
+            <!--            -->
+            <div class="section">
+                <div class="container">
+                    <div class="row">    
+                        <h3 class="section-heading">Model Collabs</h3>
+                    </div>
+                    <div class="row">
+                        <div class="one-half column category">
+                            <p class="section-description">The Model Collabs section has a number of Collabs illustrating the scaffold models of rodent brain regions; these include:
+                            <ul>
+                                <li>basal ganglia</li>
+                                <li>cerebellum</li>
+                                <li>hippocampus</li>
+                                <li>somatosensory cortex</li>
+                            </ul>
+
+                            There are also Collabs on subcellular modelling, human neuron models and a point-neuron cortical microcircuit. You can also find a useful description of ‘what is a scaffold model’ and how we will transition from scaffold models to more community-driven models.
+                            </p>
+                            <p class="section-description">
+                            <a class="button button-primary" onclick="redirect('#/collab/1655/nav/15191');">Open the model collabs</a>
+                            <p/>
+                        </div>
+                        <!--
+                            <div class="one-half column category">
+                            <img class="u-max-full-width" src="./static/images/small_img1.jpeg">
+                            </div>
+                        -->
+                    </div>
+                </div>
+            </div>
+            <!--            -->
+
+            <!--            -->
+            <div class="section dark dark 3">
+                <div class="container">
+                    <h3 class="section-heading">Open Source Tools</h3>
+                    <p class="section-description">
+
+                    Key software developed and integral to the Platform can be found in this section. Many of the applications, such as the simulators NEST, STEPS, NEURON, or tools for analysing morphologies and optimising parameters, can be accessed directly or through the Software Catalog.
+                    </p>
+                    <a onclick="redirect('#/collab/1655/nav/20754');" id="foundation" class="button button-primary">Link to the BluePyOpt tool</a>
+                </div>
+            </div>
+            <!--            -->
+
+            <!--            -->
+            <div class="section">
+                <div class="container">
+                    <h3 class="section-heading">Brain Simulation Platform Guidebook</h3>
+                    <p class="section-description">
+                    The Guidebook is an important reference tool providing more details on the Platform and how to run the use cases.
+                    </p>
+                    <a onclick="redirect('#/collab/1655/nav/18580');" class="button button-primary">Brain Simulation Platform Guidebook</a>
+                </div>
+            </div>
+            <!--            -->
+
+            <!--            -->
+            <div class="section  dark dark3">
+                <div class="container">
+                    <h3 class="section-heading">Getting Technical Support</h3>
+                    <p class="section-description">
+                    Hopefully the Guidebook will answer most of your questions. However, if you need any technical support, please create a ticket in the Issue Tracker.
+                    </p>
+                    <a onclick="redirect('#/collab/1655/nav/27138');" class="button button-primary">Issue Tracker</a>
+                </div>
+            </div>
+            <!--            -->
+
+            <!--            -->
+            <div class="section">
+                <div class="container">
+                    <h3 class="section-heading">Contacts and Feedback</h3>
+                    <p class="section-description">
+                    We are always happy to hear from users and to get feedback to improve the Platform. Please drop us an email to: <a href="mailto:bsp-support@humanbrainproject.eu">bsp-community@humanbrainproject.eu</a> or add your request to our
+                     <a href="https://forum.humanbrainproject.eu/c/bsp" target="_blank');">dedicated forum</a>.
+                    </p>
+                </div>
+            </div>
+            <!--            -->
+
+            <!--            -->
+            <div class="section  dark dark3">
+                <div class="container">
+                    <div class="row">    
+                        <h3 class="section-heading">Your Own Collab/Community</h3>
+                    </div>
+                    <div class="row">
+                        <div class="one-half column category">
+                            <p class="section-description">In addition to the tools and services provided by the Brain Simulation Platform, you can create your own Collab for working collaboratively on a project and include services provided by the Brain Simulation or other HBP Platforms. You can invite members to join your Collab. Access to privileged services may be subject to conditions and further approval.
+                            </p>
+                            <p class="section-description">
+                            <a class="button button-primary" onclick="redirect('#/collab/19/nav/179');" target="_blank">Create your own collab</a>
+                            </p>
+                        </div>
+                        <div class="one-half column category">
+                            <div class="row">
+                                <img class="u-max-full-width" src="./static/images/small_img2.jpeg">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!--            -->
+
+            <!-- End Document
+                –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+    </body>
 </html>

@@ -1,215 +1,221 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
+    <head>
 
-    <!-- Basic Page Needs
-    –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-    <meta charset="utf-8">
-    <title>Brain Simulation Platform overview</title>
-    <meta name="description" content="">
-    <meta name="author" content="">
+        <!-- Basic Page Needs
+            –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+            <meta charset="utf-8">
+            <title>Brain Simulation Platform overview</title>
+            <meta name="description" content="">
+            <meta name="author" content="">
 
-    <!-- Mobile Specific Metas
-    –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+            <!-- Mobile Specific Metas
+                –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+                <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <!-- FONT
-    –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-    <link href='https://fonts.googleapis.com/css?family=Roboto:400,300,500' rel='stylesheet' type='text/css'>
+                <!-- FONT
+                    –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+                    <link href='https://fonts.googleapis.com/css?family=Roboto:400,300,500' rel='stylesheet' type='text/css'>
 
-    <!-- CSS
-    –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-    <link rel="stylesheet" href="static/css/normalize.css">
-    <link rel="stylesheet" href="static/css/skeleton.css">
-    <link rel="stylesheet" href="static/css/overview.css">
+                    <!-- CSS
+                        –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+                        <link rel="stylesheet" href="static/css/normalize.css">
+                        <link rel="stylesheet" href="static/css/skeleton.css">
+                        <link rel="stylesheet" href="static/css/overview.css">
 
-    <!-- Scripts
-    –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-    <script src="./static/js/jquery-3.2.1.min.js"></script>
-    
-    <script>
-        var redirect = function(tgt)
+                        <!-- Scripts
+                            –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+                            <script src="./static/js/jquery-3.2.1.min.js"></script>
+
+                            <script>
+var redirect = function(tgt)
+{
+    var msg = 
+    {
+        eventName: 'location',
+        data:
         {
-            var msg = 
-            {
-                eventName: 'location',
-                data:
-                {
-                    url: tgt
-                }
-            };
-            window.parent.postMessage(msg, '*');
+            url: tgt
         }
-        
-        $("document").ready(function() 
+    };
+    window.parent.postMessage(msg, '*');
+}
+
+$("document").ready(function() 
         {
             $('.start').click(function()
-            {
-                $('html, body').animate({scrollTop: $(".platform").offset().top}, 800);
-            });
-            
+                    {
+                        $('html, body').animate({scrollTop: $(".platform").offset().top}, 800);
+                    });
+
             $('.external').attr('target', '_parent');
-            
+
         });
 
 
 $(document).ready(function(){
-  
+
 });
 
-    </script>
+                            </script>
 
-</head>
-<body>
+    </head>
+    <body>
 
-<!-- Primary Page Layout
-–––––––––––––––––––––––––––––––––––––––––––––––––– -->
+        <!-- Primary Page Layout
+            –––––––––––––––––––––––––––––––––––––––––––––––––– -->
 
-<div class="section hero">
-    <div class="container">
-        <h3 class="section-heading heading-hero">Brain Simulation Platform</h3>
-                <div class="row">
-                    <div class="one-half column category">
-                    Welcome to the Brain Simulation Platform.
-                    <br />
-                    The Brain Simulation Platform enables the reconstruction and simulation of scaffold models of brain and brain tissue in a data-driven approach.  
-                    This is version 2 of the Platform, which was released at the beginning of June 2017, following feedback from a recent review process by external reviewers and the European Commission.
+            <div class="section hero">
+                <div class="container">
+                    <h3 class="section-heading heading-hero">Brain Simulation Platform</h3>
+                    <div class="row">
+                        <div class="one-half column category">
+                            Welcome to the Brain Simulation Platform.
+                            <br />
+                            The Brain Simulation Platform enables the reconstruction and simulation of scaffold models of brain and brain tissue in a data-driven approach.  
+                            This is version 2 of the Platform, which was released at the beginning of June 2017, following feedback from a recent review process by external reviewers and the European Commission.
+                        </div>
+                        <div class="one-half column category">
+                            For version 2, the Platform has been re-organised to be more user-centric and user-friendly, so that users, with different neuroscientific and/or technical backgrounds and expertise levels, can benefit and use the Platform’s capabilities for their scientific goals and curiosity.
+                            <br />
+                            <a href="./platform.html" class="button button-primary">Explore the Platform</a>
+                            <!--<a class="start button button-primary">Start</a> -->
+                        </div>
                     </div>
-                <div class="one-half column category">
-                    For version 2, the Platform has been re-organised to be more user-centric and user-friendly, so that users, with different neuroscientific and/or technical backgrounds and expertise levels, can benefit and use the Platform’s capabilities for their scientific goals and curiosity.
-                    <br />
-                    <a class="start button button-primary">Start</a>
-                </div>
+                </div>  
             </div>
-    </div>  
-</div>
-    
-<a name="platform"></a>
-<div class="section platform">
-    <div class="container">
-        <div class="row">
-            <h3 class="section-heading">The Platform</h3>
+
             <!--
-            <div class="video-wrapper">
+                <a name="platform"></a>
+                <div class="section platform">
+                <div class="container">
+                <div class="row">
+                <h3 class="section-heading">The Platform</h3>
+            -->
+            <!--
+                <div class="video-wrapper">
                 <iframe width="560" height="315" src="https://www.youtube.com/embed/C3bU_U3vx68?rel=0&amp;showinfo=0" frameborder="0" allowfullscreen>
                 </iframe>
-            </div>
+                </div>
             -->
-            <br/>
-        </div>
-        <div class="row">
-            <div class="one-half column category">
+            <!--
+                <br/>
+                </div>
+                <div class="row">
+                <div class="one-half column category">
                 <p class="section-description">The Brain Simulation Platform is part of the Human Brain Project (HBP) platform ecosystem. It aims at providing scientists with powerful tools to reconstruct and simulate scaffold models of brain and brain tissue in a data-driven fashion. Its development is embedded in Subproject 6 of the HBP, where a tight co-design loop between science and engineering ensures the required substantial technical and scientific innovations.
                 </p>
-            </div>
-            <div class="one-half column category">
+                </div>
+                <div class="one-half column category">
                 <p class="section-description">As a result, the unique functionality of the Platform allows novel questions to be addressed, which could previously not be researched.
                 </p>
                 <a href="./platform.html" class="button button-primary">Explore</a>
-            </div>
-        </div>
-        <div class="row">
-            <div class="one-half column category">
+                </div>
+                </div>
+                <div class="row">
+                <div class="one-half column category">
                 <hr/>
                 <p class="section-description">Any question ? Contact us at <a href="mailto:bsp-support@humanbrainproject.eu">bsp-support@humanbrainproject.eu</a><br/> or add your request to our <a href="https://forum.humanbrainproject.eu/c/bsp" target="_blank');">dedicated forum</a>.
-            </div>
-        </div>
-    </div>
-</div>
+                </div>
+                </div>
+                </div>
+                </div>
+            -->
 
-<div class="section objectives">
-    <div class="container">
-        <div class="row">
-            <div class="one-half column category">
-                <h3 class="section-heading">Objectives</h3>
-                <p class="section-description">In coordination with the other parts of the HBP, the Brain Simulation Platform Subproject has four long-term objectives, to:
+
+            <div class="section objectives">
+                <div class="container">
+                    <div class="row">
+                        <div class="one-half column category">
+                            <h3 class="section-heading">Objectives</h3>
+                            <p class="section-description">In coordination with the other parts of the HBP, the Brain Simulation Platform Subproject has four long-term objectives, to:
+                            </p>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="one-half column category">
+                            <ul>
+                                <li>establish a generic strategy to reconstruct and simulate the multi-level organisation of the brain for different brain areas, whole brains and species;</li>
+                                <li>use this strategy to build high-fidelity reconstructions, first of the mouse brain and ultimately, of the human brain;</li>
+                            </ul>
+                        </div>
+                        <div class="one-half column category">
+                            <ul>
+                                <li>support <i>in silico</i> experiments using the models;</li>
+                                <li>support community-driven reconstructions and simulations, and comparisons between models based on different tools and approaches.</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <a href="https://www.humanbrainproject.eu/en/brain-simulation/" target="_blank" class="button button-primary">The context</a>
+                    </div>
+                </div>
+            </div>
+
+            <!--
+                <div class="section expectations">
+                <div class="container">
+                <h3 class="section-heading">What to expect</h3>
+                <div class="row">
+                <div class="one-half column category">
+                <p class="section-description">
+                This is the first public prototype of the Brain Simulation Platform. It entails functionality spearheaded in the first 30 months of the HBP, of a total 10 year development cycle. Accordingly, the functionality at this point has different levels of maturity and public accessibility. In brief, many of the fundamental software packages that the Platform relies on and develops, are freely available as open source. 
                 </p>
-            </div>
-        </div>
-        <div class="row">
-            <div class="one-half column category">
-                <ul>
-                    <li>establish a generic strategy to reconstruct and simulate the multi-level organisation of the brain for different brain areas, whole brains and species;</li>
-                    <li>use this strategy to build high-fidelity reconstructions, first of the mouse brain and ultimately, of the human brain;</li>
-                </ul>
-            </div>
-            <div class="one-half column category">
-                <ul>
-                    <li>support <i>in silico</i> experiments using the models;</li>
-                    <li>support community-driven reconstructions and simulations, and comparisons between models based on different tools and approaches.</li>
-                </ul>
-            </div>
-        </div>
-        <div class="row">
-            <a href="https://www.humanbrainproject.eu/en/brain-simulation/" target="_blank" class="button button-primary">The context</a>
-        </div>
-    </div>
-</div>
-
-<!--
-<div class="section expectations">
-    <div class="container">
-        <h3 class="section-heading">What to expect</h3>
-        <div class="row">
-            <div class="one-half column category">
+                </div>
+                <div class="one-half column category">
                 <p class="section-description">
-    This is the first public prototype of the Brain Simulation Platform. It entails functionality spearheaded in the first 30 months of the HBP, of a total 10 year development cycle. Accordingly, the functionality at this point has different levels of maturity and public accessibility. In brief, many of the fundamental software packages that the Platform relies on and develops, are freely available as open source. 
+                Intricate pipelines for reconstruction and simulation are packaged into web-accessible workflows, showcased as use cases, typically requiring privileged access. Lastly, using these tools and workflows, the Platform hosts team-science Collabs for collaborative building of scaffold models of different brain regions, serving as co-design drivers for the Platform. 
                 </p>
-            </div>
-            <div class="one-half column category">
-                <p class="section-description">
-    Intricate pipelines for reconstruction and simulation are packaged into web-accessible workflows, showcased as use cases, typically requiring privileged access. Lastly, using these tools and workflows, the Platform hosts team-science Collabs for collaborative building of scaffold models of different brain regions, serving as co-design drivers for the Platform. 
-            </p>
-            </div>
-        </div>
-        <div class="row">
-            <a href="./platform.html" class="button button-primary">The Platform</a>
-        </div>
-    </div>
-</div>
--->
+                </div>
+                </div>
+                <div class="row">
+                <a href="./platform.html" class="button button-primary">The Platform</a>
+                </div>
+                </div>
+                </div>
+            -->
 
-<div class="section audience">
-    <div class="container">
-        <div class="row">
-            <h3 class="section-heading">Target audience</h3>
-        </div>
-        <div class="row">
-            <div class="one-half column">
-                <p class="section-description">The Platform is available to all interested researchers, but as with most scientific instruments, access to advanced functionality may be subject to certain conditions. This is due to the early state of the Platform and to the fact that it relies on limited resources, such as supercomputers. The Platform enables researchers to work collaboratively on converging models, by creating a common workplace (Collab) and a common workflow for building, simulating and validating models. Researchers can also add their tools to the Platform.   </p>
-              </div>
-             <div class="one-half column">
-                <p class="section-description">
-        Documentation is integrated within the Platform and support is available. Training workshops on specific aspects of the Platform are planned, alongside major neuroscience events. </p>
-            <a onclick="redirect('#/collab/1655/nav/18580');"  class="button button-primary">Learn more browsing the guidebook</a>
+            <div class="section audience">
+                <div class="container">
+                    <div class="row">
+                        <h3 class="section-heading">Target Audience</h3>
+                    </div>
+                    <div class="row">
+                        <div class="one-half column">
+                            <p class="section-description">The Platform is available to all interested researchers, but as with most scientific instruments, access to advanced functionality may be subject to certain conditions. This is due to the early state of the Platform and to the fact that it relies on limited resources, such as supercomputers. The Platform enables researchers to work collaboratively on converging models, by creating a common workplace (Collab) and a common workflow for building, simulating and validating models. Researchers can also add their tools to the Platform.   </p>
+                        </div>
+                        <div class="one-half column">
+                            <p class="section-description">
+                            Documentation is integrated within the Platform and support is available. Training workshops on specific aspects of the Platform are planned, alongside major neuroscience events. </p>
+                            <a onclick="redirect('#/collab/1655/nav/18580');"  class="button button-primary">Learn more browsing the guidebook</a>
 
+                        </div>
+                        <div class="one-half column">
+
+                        </div>
+                    </div>
+                </div>
             </div>
-            <div class="one-half column">
-                
-            </div>
-        </div>
-    </div>
-</div>
-<!--
-<div class="section development">
-    <div class="container">
-        <div class="row">
-            <h3 class="section-heading">Development</h3>
-        </div>
-        <div class="row">
-            <div class="one-half column">
+            <!--
+                <div class="section development">
+                <div class="container">
+                <div class="row">
+                <h3 class="section-heading">Development</h3>
+                </div>
+                <div class="row">
+                <div class="one-half column">
                 <p class="section-description">As described above, the Brain Simulation Platform is a work in progress with more development and advances expected throughout the Operational Phase of the Project. <br/>
                 </p>
                 <p class="section-description">Information on future releases and what is planned is detailed in the "Roadmap" section.</p>
                 <a class="button button-primary" onclick="redirect('#/collab/161/nav/5988');">Open the roadmap</a>
-            </div>
-        </div>
-    </div>
-</div>
--->
+                </div>
+                </div>
+                </div>
+                </div>
+            -->
 
 
-<!-- End Document
-  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-</body>
+            <!-- End Document
+                –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+    </body>
 </html>
